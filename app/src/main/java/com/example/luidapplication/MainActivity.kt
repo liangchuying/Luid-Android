@@ -2,6 +2,7 @@ package com.example.luidapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,7 +21,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        startActivity(Intent(this, videoActivity::class.java))
+        findViewById<Button>(R.id.button_video).setOnClickListener {
+            startActivity(Intent(this, videoActivity::class.java))
+        }
+
     }
 }
 
