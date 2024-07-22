@@ -6,9 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".videoActivity">
+    tools:context=".VideoActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/ic_launcher_back_foreground"
@@ -19,8 +20,8 @@
         android:layout_height="match_parent">
         <VideoView
             android:id="@+id/video_widget"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"

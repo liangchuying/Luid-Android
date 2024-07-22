@@ -16,7 +16,7 @@
         android:theme="@style/Theme.LuidApplication"
         tools:targetApi="31">
         <activity
-            android:name=".videoActivity"
+            android:name=".VideoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
